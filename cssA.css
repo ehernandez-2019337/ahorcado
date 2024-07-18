@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+  }
+  body {
+    background-color: #c6bff0;
+  }
+  .container {
+    font-size: 16px;
+    background-color: #c6bff0;
+    width: 600vw;
+    height: 100vw;
+    max-width: 50em;
+    max-height: 50em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em #c6bff0;
+  }
+  #ContenedorOpciones {
+    text-align: center;
+  }
+  #ContenedorOpciones div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em 0;
+  }
+  #ContenedorOpciones button {
+    padding: 1.2em 2.4em;
+    border: 3px solid #1f0444;
+    background-color: #b6bbf1;
+    color: #1f0444;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+  }
+  #ContenedorOpciones button:disabled {
+    border: 3px solid #1f0444;
+    color: #1f0444;
+    background-color: #b6bbf1;
+  }
+  #ContenedorOpciones button.active {
+    background-color: #b6bbf1;
+    border: 3px solid #1f0444;
+    color: #1f0444;
+  }
+  .ContenedorLetra {
+    width: 200%;
+    height: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+  }
+  #ContenedorLetra button {
+    height: 5em;
+    width: 5em;
+    border-radius: 0.3em;
+    color: #1f0444;
+    background-color: #ffffff;
+    
+  }
+  .new-game-popup {
+    background-color: #c6bff0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+  }
+  
+  #user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.2em 0;
+  }
+  canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+  }
+  .hide {
+    display: none;
+  }
+  #result-text h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #result-text p {
+    font-size: 1.25em;
+    margin: 1em 0 2em 0;
+  }
+  #result-text span {
+    font-weight: 600;
+  }
+  #BotonJugarDeNuevo {
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: #1f0444;
+    border: 3px solid #000000;
+    color: #ffffff;
+    border-radius: 0.2em;   
+  }
+  .win-msg {
+    color: #033708;
+  }
+  .lose-msg {
+    color: #440404;
+  }
